@@ -1,0 +1,6 @@
+# Ignore artifacts:
+android
+node_modules
+ios
+__tests__
+.vscode
