@@ -1,6 +1,6 @@
 # react-native-demo
 
-该项目是使用 React Native 技术栈开发的一个 demo，可作为后续 RN 项目开发的基础架子。
+该项目是使用 React Native 技术栈开发的一个 demo，并集成了路由控制、开发规范、状态管理、网络请求等功能，可作为后续 RN 项目开发的基础架子。
 
 # 环境安装
 
@@ -53,7 +53,7 @@ git config --global https.proxy 'socks5://127.0.0.1:your-port'
 ## 克隆项目
 
 ```bash
-git clone
+git clone https://github.com/jealyn/react-native-demo.git
 ```
 
 ## 安装依赖
