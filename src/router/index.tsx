@@ -5,6 +5,7 @@
  */
 import React from 'react';
 import { Image } from 'react-native';
+import RNBootSplash from 'react-native-bootsplash';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
@@ -64,7 +65,9 @@ const BottomTabBar = () => (
 
 const Router = () => {
   return (
-    <NavigationContainer ref={navigationRef}>
+    // RNBootSplash.hide()方法用于关闭启动屏
+    // https://github.com/zoontek/react-native-bootsplash
+    <NavigationContainer ref={navigationRef} onReady={() => RNBootSplash.hide()}>
       {/* stack 导航方式  */}
       {/* https://reactnavigation.org/docs/hello-react-navigation */}
       <Stack.Navigator

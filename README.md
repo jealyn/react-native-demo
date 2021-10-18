@@ -221,6 +221,23 @@ import request from '@/utils/request';
 export const getSomeListApi = () => request.get('/api/somelist');
 ```
 
+## 启动屏设置
+
+将启动屏图片放置在 assets 文件夹下，并重命名为 bootsplash_original.png。然后在终端中执行如下代码：
+
+```bash
+yarn react-native generate-bootsplash assets/bootsplash_original.png --assets-path=assets --logo-width=375
+```
+
+此时就生成了启动屏图片，然后重新启动 app 即可看到效果
+
+```bash
+yarn ios # 启动ios
+yarn android # 启动安卓
+```
+
+启动屏插件使用的是 react-native-bootsplash，可[点击此处](https://github.com/zoontek/react-native-bootsplash)查看详细用法。
+
 # 项目结构
 
 ```bash
