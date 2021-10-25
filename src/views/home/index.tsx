@@ -12,7 +12,13 @@ const HomeScreen: React.FC<ComponentProp> = ({ navigation }) => {
   }, []);
 
   return (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
+    <View
+      style={{
+        flex: 1,
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
       <Text>Home Screen</Text>
       <Button
         title="Go to Details"
@@ -22,7 +28,10 @@ const HomeScreen: React.FC<ComponentProp> = ({ navigation }) => {
           })
         }
       />
-      <Button title="Go to Settings" onPress={() => navigation.navigate('Settings')} />
+      <Button
+        title="Go to Baidu webview"
+        onPress={() => navigation.navigate('WebView', { url: 'https://www.baidu.com' })}
+      />
     </View>
   );
 };

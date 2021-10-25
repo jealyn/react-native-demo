@@ -238,6 +238,16 @@ yarn android # 启动安卓
 
 启动屏插件使用的是 react-native-bootsplash，可[点击此处](https://github.com/zoontek/react-native-bootsplash)查看详细用法。
 
+## webview 跳转
+
+该项目引入了 react-native-webview 插件，可实现 webview 页面的跳转，使用方式为：
+
+```js
+navigation.navigate('WebView', { url: 'the webview url' });
+```
+
+可[点击此处](https://github.com/react-native-webview/react-native-webview)查看该插件的详细用法。
+
 # 项目结构
 
 ```bash

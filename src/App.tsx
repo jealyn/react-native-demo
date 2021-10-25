@@ -6,6 +6,7 @@ import React from 'react';
 import { Provider } from 'react-redux';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 import { PersistGate } from 'redux-persist/integration/react';
+import { StatusBar } from 'react-native';
 
 import { store, persistor } from './store';
 import Router from './router';
@@ -18,6 +19,7 @@ const App: React.FC = () => {
       <PersistGate loading={null} persistor={persistor}>
         {/* SafeArea组件 包裹容器 */}
         <SafeAreaProvider>
+          <StatusBar translucent={true} backgroundColor="#fff" />
           {/* 路由及组件注册 */}
           <Router />
         </SafeAreaProvider>

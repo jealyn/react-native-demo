@@ -17,6 +17,7 @@ import HomeScreen from '../views/home';
 import DetailsScreen from '../views/detail';
 import SettingsScreen from '../views/setting';
 import LoginScreen from '../views/login';
+import WebViewContainer from '../components/webview';
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -78,6 +79,8 @@ const Router = () => {
         <Stack.Screen name="Tabbar" component={BottomTabBar} options={{ headerShown: false }} />
         <Stack.Screen name="Settings" component={SettingsScreen} />
         <Stack.Screen name="Login" component={LoginScreen} options={{ headerShown: false }} />
+        {/* webview承载路由 通过 url 参数传递 */}
+        <Stack.Screen name="WebView" component={WebViewContainer} />
       </Stack.Navigator>
     </NavigationContainer>
   );
